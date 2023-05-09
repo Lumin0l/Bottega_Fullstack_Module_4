@@ -31,7 +31,6 @@ if (age >= 25){
 	console.log("You can rent a car");
 }
 
-
 /*
 If / Else reelations
 */
