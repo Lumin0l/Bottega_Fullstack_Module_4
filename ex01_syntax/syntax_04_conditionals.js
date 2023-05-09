@@ -30,3 +30,15 @@ if (age !== ageTwo) {
 if (age >= 25){
 	console.log("You can rent a car");
 }
+
+
+/*
+If / Else reelations
+*/
+
+if (age >= 25) {
+	console.log("You can rent a car");
+} else {
+	console.log("You cannot rent a car");
+}
+
