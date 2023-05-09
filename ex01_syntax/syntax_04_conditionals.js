@@ -42,3 +42,4 @@ if (age >= 25) {
 	console.log("You cannot rent a car");
 }
 
+
