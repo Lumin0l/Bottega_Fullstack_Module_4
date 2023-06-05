@@ -5,3 +5,4 @@ const page = "Home";
 console.log(`class=${ page === 'Home' ? 'master-layout' : 'secondary-layout'}`);
 
 // In this case we have: if the page is equal to "Home" print "master-layout", else print "secondary-layout".
+// So it will print the correct class atribute for the html.
