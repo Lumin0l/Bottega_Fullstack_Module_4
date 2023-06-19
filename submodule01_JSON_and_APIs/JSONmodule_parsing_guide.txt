@@ -1,0 +1,12 @@
+It is not .json because it doesn't admit comments.
+
+
+JSON is short for JavaScript Object Notation -> and it's a way to store data in attribute-value pairs.
+
+It was created to be universal, they work for ios, ruby and all apps. It just is slightly different for different languages.
+The JSON data is framed in a certain way, but every language has a way to do API requests.
+
+The data is normally stored in levels 2+:
+	- Level 1 is the id. normally an int.
+	- level 2 is data stored
+	- level 2+ any extra info we save up
