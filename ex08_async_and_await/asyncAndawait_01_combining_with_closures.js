@@ -1,11 +1,14 @@
-/* They help dictate the order of actions happening */
+/* 
 
-// Let's say the example of a login:
+Combining closures to ensure all processes have run
+
+*/
+
 const login = () => {
 	return new Promise((resolve, reject) => {
 	  setTimeout(() => {
 		resolve('User logged in...');
-	  }, 2000);
+	  }, 4000);
 	});
   }
   
@@ -17,10 +20,12 @@ const login = () => {
 	});
   }
   
-  async function loginActivities() {
-	const returnedLogin = await login(); // we tell the program to not move on until login goes through
+  async function loginActivities(login, updateAccount) {
+	const returnedLogin = await login;
 	console.log(returnedLogin);
   
-	const returnedUpdateAccount = await updateAccount();
+	const returnedUpdateAccount = await updateAccount;
 	console.log(returnedUpdateAccount);
   }
+  
+loginActivities(login(), updateAccount());
